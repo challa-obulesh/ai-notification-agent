@@ -17,7 +17,7 @@ class ApiService(private val context: Context) {
 
     companion object {
         private const val TAG = "ApiService"
-        const val DEFAULT_URL = "http://10.0.2.2:5000"
+        const val DEFAULT_URL = "https://ai-notification-agent.onrender.com"
     }
 
     private val client = OkHttpClient.Builder()
