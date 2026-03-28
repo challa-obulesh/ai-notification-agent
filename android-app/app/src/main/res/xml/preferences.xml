@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="API Connection">
+        <EditTextPreference
+            app:key="api_url"
+            app:title="API Server URL"
+            app:summary="e.g. http://192.168.1.10:5000  or your Render URL"
+            app:defaultValue="http://10.0.2.2:5000"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+        <Preference
+            app:key="about"
+            app:title="AI Notification Agent"
+            app:summary="v1.0 — NLP + ML notification classifier" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

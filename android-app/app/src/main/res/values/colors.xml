@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="background">#0F0F1A</color>
+    <color name="surface_dark">#16162A</color>
+    <color name="surface_card">#1C1C30</color>
+
+    <!-- Accent -->
+    <color name="accent_purple">#BB86FC</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EDEDF5</color>
+    <color name="text_secondary">#7B7B9A</color>
+
+    <!-- Status -->
+    <color name="status_online">#4CAF50</color>
+    <color name="status_offline">#F44336</color>
+
+    <!-- Importance -->
+    <color name="importance_high">#CF6679</color>
+    <color name="importance_medium">#FFB74D</color>
+    <color name="importance_low">#81C784</color>
+
+    <!-- Required by AOSP theme -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

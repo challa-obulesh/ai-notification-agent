@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ai-notification-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -c "import nltk; [nltk.download(p, quiet=True) for p in ['punkt','punkt_tab','stopwords','wordnet','averaged_perceptron_tagger']]" && python data/notifications_dataset.py && python train_model.py
+    startCommand: gunicorn app:app --workers 2 --threads 2 --timeout 120 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHONIOENCODING
+        value: utf-8
+      - key: PYTHON_VERSION
+        value: 3.11.9
